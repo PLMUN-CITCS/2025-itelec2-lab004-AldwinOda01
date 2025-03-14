@@ -1,28 +1,25 @@
 # Aldwin Odavar
 # ITELEC2
-# Laboratory #03 – Guided Coding Exercise:
-# Variables, Literals, and Case-Sensitivity in Python (with Naming Conventions)
+# Laboratory #04 – Guided Coding Exercise:
+# Input, Output, and Text Formatting in Python
 
-count = 10             
-Count = 15             
-total_count = 20      
+# Get integer input
+user_integer = int(input("Enter an integer: "))
 
-decimal_value = 3.14      
+# Get decimal (float) input
+user_decimal = float(input("Enter a decimal number: "))
 
-message = "Hello, Python!"   
+# Get string input
+user_text = input("Enter a string: ")
 
-is_active = True        
+# Display formatted output using old-style formatting
+print("\nFormatted Output using old-style formatting:")
+print("Integer: %d" % user_integer)
+print("Decimal: %.2f" % user_decimal)  # Formatting float to two decimal places
+print("String: %s" % user_text)
 
-result = None           
-
-print("Integer (count):", count)
-print("Integer (Count):", Count)
-print("Integer (total_count):", total_count)
-print("Decimal:", decimal_value)
-print("Text:", message)
-print("Boolean:", is_active)
-print("None Value:", result)
-
-num1 = 5
-num2 = 3
-print(f"Sum: {num1 + num2:.2f}")
+# Display formatted output using f-strings
+print("\nFormatted Output using f-strings:")
+print(f"Integer: {user_integer}")
+print(f"Decimal: {user_decimal:.2f}")  # Formatting float to two decimal places
+print(f"String: {user_text}")
